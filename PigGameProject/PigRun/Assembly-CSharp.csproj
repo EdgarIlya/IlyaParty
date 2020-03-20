@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CharacterControllerScript.cs" />
      <Compile Include="Assets\Player2DControl.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Bambi/Documents/GitHub/IlyaParty/PigGameProject/PigRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

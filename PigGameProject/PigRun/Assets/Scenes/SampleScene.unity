@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 144093594}
   - component: {fileID: 144093593}
   - component: {fileID: 144093592}
+  - component: {fileID: 144093597}
   m_Layer: 0
   m_Name: Pig
   m_TagString: Untagged
@@ -192,7 +193,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.13, y: 1.28}
+    oldSize: {x: 2.15, y: 1.28}
     newSize: {x: 2.13, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -238,7 +239,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 303ca6ebe45e46a4abc377d2e9af7ec8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f9eb783c6989fd4a8e21c9b5c31708c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -257,12 +258,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144093591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.63, y: -1.39, z: 0}
-  m_LocalScale: {x: 0.635, y: 0.635, z: 0.635}
+  m_LocalPosition: {x: -4.498, y: -1.312, z: 0}
+  m_LocalScale: {x: 0.75755495, y: 0.75755495, z: 0.75755495}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &144093597
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144093591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a155b408a787ed458726c6eb9ed8930, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
