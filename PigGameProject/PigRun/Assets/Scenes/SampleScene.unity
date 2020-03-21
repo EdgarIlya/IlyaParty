@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 144093593}
   - component: {fileID: 144093592}
   - component: {fileID: 144093597}
-  - component: {fileID: 144093598}
+  - component: {fileID: 144093599}
   m_Layer: 0
   m_Name: Pig
   m_TagString: Untagged
@@ -284,7 +284,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &144093598
+--- !u!114 &144093599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
