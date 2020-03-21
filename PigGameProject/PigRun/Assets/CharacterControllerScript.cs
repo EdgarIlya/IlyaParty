@@ -37,14 +37,14 @@ public class CharacterControllerScript : MonoBehaviour
 
         //обращаемся к компоненту персонажа RigidBody2D. задаем ему скорость по оси Х, 
         //равную значению оси Х умноженное на значение макс. скорости
-        rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
         //если нажали клавишу для перемещения вправо, а персонаж направлен влево
         if(move > 0 && !isFacingRight)
             //отражаем персонажа вправо
             Flip();
         //обратная ситуация. отражаем персонажа влево
-        else if (move < 0 && isFacingRight)
+        else if (move < 0 && !isFacingRight)
             Flip();
     }
 
