@@ -25,6 +25,7 @@ public class Player2DControl : MonoBehaviour {
 
 	void Start () 
 	{
+		anim = GetComponent<Animator>();
 		body = GetComponent<Rigidbody2D>();
 		body.fixedAngle = true;
 
@@ -125,14 +126,14 @@ public class Player2DControl : MonoBehaviour {
 		}
 
 		if(horizontal > 0 && !isFacingRight) Flip(); else if(horizontal < 0 && isFacingRight) Flip();
-		if (Input.GetKeyDown(addForceButton))
+		if (Input.GetKey(addForceButton))
 		{
 			anim.SetBool("isJumping", true);
 
 		}
 		else
 		{
-			if (jump == false)
+			if (jump == true)
 			{
 				anim.SetBool("isJumping", false);
 			}
