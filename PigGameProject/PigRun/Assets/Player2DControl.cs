@@ -128,6 +128,7 @@ public class Player2DControl : MonoBehaviour {
 		if (Input.GetKeyDown(addForceButton))
 		{
 			anim.SetBool("isJumping", true);
+
 		}
 		else
 		{
@@ -136,5 +137,6 @@ public class Player2DControl : MonoBehaviour {
 				anim.SetBool("isJumping", false);
 			}
 		}
+
 	}
 }
