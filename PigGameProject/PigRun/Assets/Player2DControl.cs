@@ -21,6 +21,7 @@ public class Player2DControl : MonoBehaviour {
 	private Rigidbody2D body;
 	private float rotationY;
 	private bool jump;
+	private Animator anim;
 
 	void Start () 
 	{
@@ -124,5 +125,16 @@ public class Player2DControl : MonoBehaviour {
 		}
 
 		if(horizontal > 0 && !isFacingRight) Flip(); else if(horizontal < 0 && isFacingRight) Flip();
+		if (Input.GetKeyDown(addForceButton))
+		{
+			anim.SetBool("isJumping", true);
+		}
+		else
+		{
+			if (jump == false)
+			{
+				anim.SetBool("isJumping", false);
+			}
+		}
 	}
 }

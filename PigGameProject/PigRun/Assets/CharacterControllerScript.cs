@@ -10,6 +10,7 @@ public class CharacterControllerScript : MonoBehaviour
     private bool isFacingRight = true;
     //ссылка на компонент анимаций
     private Animator anim;
+    public KeyCode addForceButton = KeyCode.Space;
 
     /// <summary>
     /// Начальная инициализация
