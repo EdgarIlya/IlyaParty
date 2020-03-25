@@ -138,6 +138,5 @@ public class Player2DControl : MonoBehaviour {
 				anim.SetBool("isJumping", false);
 			}
 		}
-
 	}
 }
