@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - apple
+  - Pig
   layers:
   - Default
   - TransparentFX

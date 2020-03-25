@@ -4,23 +4,15 @@ using UnityEngine;
 
 public class AppleDis : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int price;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Pig")
         {
-            Destroy(gameObject);
+          ApplePlayer.apple += price;
+          GameObject.FindGameObjectWithTag("Pig").GetComponent<ApplePlayer>().TextApple.text = ApplePlayer.apple.ToString();
+          Destroy(gameObject);
         }
     }
 }

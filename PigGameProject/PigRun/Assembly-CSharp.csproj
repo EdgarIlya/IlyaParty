@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AppleDis.cs" />
+    <Compile Include="Assets\ApplePlayer.cs" />
     <Compile Include="Assets\CharacterControllerScript.cs" />
     <Compile Include="Assets\Player2DControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
