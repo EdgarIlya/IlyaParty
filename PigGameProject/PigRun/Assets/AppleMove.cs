@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class AppleMove : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Vector2 startPosition;
+    public Vector2 endPosition;
+    public float step;
+    private float progress;
+
     void Start()
     {
-        
+        transform.position = startPosition;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        transform.position = Vector2.Lerp(startPosition, endPosition, progress);
+        progress += step;
     }
 }
