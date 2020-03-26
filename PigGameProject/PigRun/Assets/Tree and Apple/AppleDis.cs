@@ -14,5 +14,9 @@ public class AppleDis : MonoBehaviour
           GameObject.FindGameObjectWithTag("Pig").GetComponent<ApplePlayer>().TextApple.text = ApplePlayer.apple.ToString();
           Destroy(gameObject);
         }
+        else if ((collision.gameObject.name == "TransparentVertical") || (collision.gameObject.name == "TransparentVertical1") || (collision.gameObject.name == "TransparentHorizontal") || (collision.gameObject.name == "TransparentHorizontal1"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
