@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 131
+  controlID: 130
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 39
+  controlID: 128
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 110
+  controlID: 129
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 111
+  controlID: 53
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,15 +354,32 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 1107506646723241512, guid: 4a155b408a787ed458726c6eb9ed8930, type: 2}
+    - {fileID: 1107505301692263846, guid: 40a97d16025e54747a9ade004da85fb3, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.5174147
+    - e00: 0.71245056
       e01: 0
       e02: 0
-      e03: 191.18823
+      e03: 167.91806
       e10: 0
-      e11: 0.5174147
+      e11: 0.71245056
       e12: 0
-      e13: 79.06668
+      e13: 2.7906494
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1.1175734
+      e01: 0
+      e02: 0
+      e03: -189.98749
+      e10: 0
+      e11: 1.1175734
+      e12: 0
+      e13: 33.5272
       e20: 0
       e21: 0
       e22: 1
@@ -372,10 +389,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 4a155b408a787ed458726c6eb9ed8930,
+  m_AnimatorController: {fileID: 9100000, guid: 40a97d16025e54747a9ade004da85fb3,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107506646723241512, guid: 4a155b408a787ed458726c6eb9ed8930,
+  - m_Target: {fileID: 1107505301692263846, guid: 40a97d16025e54747a9ade004da85fb3,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -410,14 +427,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 466
-    y: 81
-    width: 943
-    height: 543
+    x: 462
+    y: 73
+    width: 951
+    height: 553
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -6360
+  m_LastSelectedObjectID: 10610
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -439,10 +456,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 466
-    y: 81
-    width: 943
-    height: 543
+    x: 462
+    y: 73
+    width: 951
+    height: 553
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &17
 MonoBehaviour:
@@ -482,20 +499,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - "Assets/\u041A\u043D\u043E\u043F\u043A\u0438"
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 40
   m_LastFolders:
-  - "Assets/\u041A\u043D\u043E\u043F\u043A\u0438"
+  - Assets
   m_LastFoldersGridSize: 40
   m_LastProjectPath: C:\Users\Bambi\Documents\GitHub\IlyaParty\PigGameProject\PigRun
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a22a0000
-    m_LastClickedID: 10914
-    m_ExpandedIDs: 000000002e26000000ca9a3b
+    m_SelectedIDs: 2e260000
+    m_LastClickedID: 9774
+    m_ExpandedIDs: 0000000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -550,7 +567,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ba260000202a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -644,21 +661,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aef9ffffcefaffffdefbffff6c29000076290000
+      m_ExpandedIDs: f2a3ffff0aa4ffff34a5ffff24f9ffffdefbffff722900007c29000092290000c2290000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Main Camera
+        m_OriginalName: Main Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 10666
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -700,9 +717,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.13015628, y: 0.092582434, z: -9.879675}
+    m_Target: {x: 0.8295333, y: -0.039554827, z: -9.894068}
     speed: 2
-    m_Value: {x: 0.13015628, y: 0.092582434, z: -9.879675}
+    m_Value: {x: 0.8295333, y: -0.039554827, z: -9.894068}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -734,9 +751,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.935689
+    m_Target: 11.38433
     speed: 2
-    m_Value: 9.935689
+    m_Value: 11.38433
   m_Ortho:
     m_Target: 1
     speed: 2
