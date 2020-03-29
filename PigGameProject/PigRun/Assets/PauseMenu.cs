@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject continue_button;
+    public GameObject exit_button;
     public GameObject pauseMenuUI;
     private RectTransform rectTransfrom;
 
@@ -28,15 +29,18 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
-        rectTransfrom = continue_button.GetComponent<RectTransform>();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        //button1.texture.Resize(640, 480);
+        //Восстанавливаем исходный размер кнопки "продолжить"
+        rectTransfrom = continue_button.GetComponent<RectTransform>();
         rectTransfrom.sizeDelta = new Vector2(345.7f, 64.8f); // задаем размер   new Vectro2 (width, height)
-        //continue_button.transform.
-           //gameObject.transform.
-        //localScale = new Vector2(1f, 1f);
+        //Восстанавливаем исходный размер кнопки "выйти из игры"
+        rectTransfrom = exit_button.GetComponent<RectTransform>();
+        rectTransfrom.sizeDelta = new Vector2(388.76f, 72.87f); // задаем размер   new Vectro2 (width, height)
+
+
+
     }
 
     void Pause()

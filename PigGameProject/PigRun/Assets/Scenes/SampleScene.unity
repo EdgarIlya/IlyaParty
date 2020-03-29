@@ -568,6 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continue_button: {fileID: 1614641544}
+  exit_button: {fileID: 259580229}
   pauseMenuUI: {fileID: 661963072}
 --- !u!1 &259580229
 GameObject:
