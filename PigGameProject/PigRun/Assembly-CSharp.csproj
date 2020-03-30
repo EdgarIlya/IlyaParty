@@ -70,6 +70,8 @@
     <Compile Include="Assets\Tree and Apple\ApplePlayer.cs" />
     <Compile Include="Assets\Tree and Apple\BigTreeAppleSpawner.cs" />
     <Compile Include="Assets\Tree and Apple\LilTreeAppleSpawn.cs" />
+    <Compile Include="Assets\Бомбы и всё с ними\BombExplosionPig.cs" />
+    <Compile Include="Assets\Бомбы и всё с ними\BompSpawn.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Bambi/Documents/GitHub/IlyaParty/PigGameProject/PigRun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
