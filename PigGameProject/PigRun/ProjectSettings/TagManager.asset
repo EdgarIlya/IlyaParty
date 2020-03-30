@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - apple
   - Pig
+  - Bomb
   layers:
   - Default
   - TransparentFX

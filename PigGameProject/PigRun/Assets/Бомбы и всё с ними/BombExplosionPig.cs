@@ -17,10 +17,40 @@ public class BombExplosionPig : MonoBehaviour
         if (collision.gameObject.name == "Pig")
         {
             anim.SetBool("IsExplosive", true);
-            //Destroy(gameObject);
+            StartCoroutine(DestroyExplosionPig());
         }
         else if ((collision.gameObject.name == "TransparentVertical") || (collision.gameObject.name == "TransparentVertical1") || (collision.gameObject.name == "TransparentHorizontal") || (collision.gameObject.name == "TransparentHorizontal1"))
         {
+            Destroy(gameObject);
+        }
+
+        if ((collision.gameObject.tag == "Ground") || (collision.gameObject.tag == "apple") || (collision.gameObject.tag == "Bomb"))
+        {
+            StartCoroutine(DestroyExplosionLifeEnd());
+        }
+        else if ((collision.gameObject.name == "TransparentVertical") || (collision.gameObject.name == "TransparentVertical1") || (collision.gameObject.name == "TransparentHorizontal") || (collision.gameObject.name == "TransparentHorizontal1"))
+        {
+            Destroy(gameObject);
+        }
+
+    }
+    IEnumerator DestroyExplosionPig()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.85f);
+            Destroy(gameObject);
+        }
+    }
+
+    IEnumerator DestroyExplosionLifeEnd()
+    {
+        while (true)
+        {
+
+            yield return new WaitForSeconds(3f);
+            anim.SetBool("IsExplosive", true);
+            yield return new WaitForSeconds(0.85f);
             Destroy(gameObject);
         }
     }
