@@ -38,7 +38,7 @@ public class BombExplosionPig : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.85f);
+            yield return new WaitForSeconds(1f);
             Destroy(gameObject);
         }
     }
@@ -50,7 +50,7 @@ public class BombExplosionPig : MonoBehaviour
 
             yield return new WaitForSeconds(3f);
             anim.SetBool("IsExplosive", true);
-            yield return new WaitForSeconds(0.85f);
+            yield return new WaitForSeconds(1f);
             Destroy(gameObject);
         }
     }
