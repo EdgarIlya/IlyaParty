@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CharacterControllerScript.cs" />
+    <Compile Include="Assets\Death_Menu.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\PigDeath.cs" />
     <Compile Include="Assets\Player2DControl.cs" />
