@@ -118,6 +118,7 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 e54fb2f01bcdb541bc941169995b19b3 Assembly-CSharp.dll:.AppleDis
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+025907b83d2f8a7ab6715930a851d394 Assembly-CSharp.dll:.Death_Menu
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 398511ad07624d5e56e6c946dcf44da1 Assembly-CSharp.dll:.Player2DControl
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -163,4 +164,3 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 dec767e01c7248652aac9920c1037b49 Assembly-CSharp.dll:.PauseMenu
 891e74545229a105de77cd627fd6d287 Assembly-CSharp.dll:.PigDeath
-025907b83d2f8a7ab6715930a851d394 Assembly-CSharp.dll:.Death_Menu
