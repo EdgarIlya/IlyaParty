@@ -23,7 +23,8 @@ public class PauseMenu : MonoBehaviour
             }
             else
             {
-                Pause();
+                if(sharedvariables.DeathMenuActive == false)
+                 Pause();
             }
         }
     }

@@ -90,7 +90,7 @@ public class Player2DControl : MonoBehaviour {
 
 	void Flip()
 	{
-		if(projectAxis == ProjectAxis.onlyX)
+		if(projectAxis == ProjectAxis.onlyX && sharedvariables.StopFlip == false)
 		{
 			isFacingRight = !isFacingRight;
 			Vector3 theScale = transform.localScale;

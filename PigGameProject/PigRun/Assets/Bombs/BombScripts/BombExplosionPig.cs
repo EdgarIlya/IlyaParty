@@ -20,8 +20,9 @@ public class BombExplosionPig : MonoBehaviour
         //При соприкосновении с обЪектом "Pig" (свинкой) проиграем анимацию взрыва, затем перейдем к корутину DestroyExplosionPig
         if (collision.gameObject.name == "Pig")
         {
-            anim.SetBool("IsExplosive", true);
+            //anim.SetBool("IsExplosive", true);
             StartCoroutine(DestroyExplosionPig());
+            //Destroy(gameObject);
         }
         //Если бомба не столкнется со свинкой и попадет на невидимые барьеры за пределами экрана сцены, то бомба будет уничтожена
         else if ((collision.gameObject.name == "TransparentVertical") || (collision.gameObject.name == "TransparentVertical1") || (collision.gameObject.name == "TransparentHorizontal") || (collision.gameObject.name == "TransparentHorizontal1"))
@@ -48,7 +49,7 @@ public class BombExplosionPig : MonoBehaviour
         while (true)
         {
             //ждём 1 секунду, чтобы анимация взрыва проигралась и закончилась, затем удалим объект бомбу
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.2f);
             Destroy(gameObject);
         }
     }

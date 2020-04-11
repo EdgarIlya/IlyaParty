@@ -12,14 +12,20 @@ public class Death_Menu : MonoBehaviour
     {
         if ((GameObject.Find("Pig") == null))
         {
-                Pause();
+            Pause();
+        }
+
+        if ((GameObject.Find("Pig") != null))
+        {
+            sharedvariables.DeathMenuActive = false;
         }
     }
 
     public void Restart()
     {
-        
         SceneManager.LoadScene("SampleScene");
+        sharedvariables.StopFlip = false;
+        
         //SceneManager.GetActiveScene();
 
         /*
@@ -40,6 +46,7 @@ public class Death_Menu : MonoBehaviour
         deathMenuUI.SetActive(true);
         //Time.timeScale = 0f;
         GameIsPaused = true;
+        sharedvariables.DeathMenuActive = true;
     }
 
     public void QuitGame()

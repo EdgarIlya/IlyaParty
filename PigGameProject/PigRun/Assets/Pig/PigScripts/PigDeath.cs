@@ -30,13 +30,13 @@ public class PigDeath : MonoBehaviour
             //Удалить объект свинку
 
             //yield return new WaitForSeconds(0.7f);
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            sharedvariables.StopFlip = true;
+            //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
             anim.SetBool("NotDetonate", false);
             yield return new WaitForSeconds(0.1f);
             anim.SetBool("isBombTouch", true);
-            
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             Destroy(gameObject);
         }
     }

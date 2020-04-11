@@ -5,4 +5,5 @@ using UnityEngine;
 public class sharedvariables : MonoBehaviour
 {
     public static bool StopFlip = false;
+    public static bool DeathMenuActive = false;
 }
