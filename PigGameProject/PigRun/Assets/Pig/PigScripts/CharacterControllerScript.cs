@@ -54,13 +54,17 @@ public class CharacterControllerScript : MonoBehaviour
     /// </summary>
     private void Flip()
     {
-        //меняем направление движения персонажа
-        isFacingRight = !isFacingRight;
-        //получаем размеры персонажа
-        Vector3 theScale = transform.localScale;
-        //зеркально отражаем персонажа по оси Х
-        theScale.x *= -1;
-        //задаем новый размер персонажа, равный старому, но зеркально отраженный
-        transform.localScale = theScale;
+        if(sharedvariables.StopFlip == false)
+        {
+            //меняем направление движения персонажа
+            isFacingRight = !isFacingRight;
+            //получаем размеры персонажа
+            Vector3 theScale = transform.localScale;
+            //зеркально отражаем персонажа по оси Х
+            theScale.x *= -1;
+            //задаем новый размер персонажа, равный старому, но зеркально отраженный
+            transform.localScale = theScale;
+        }
+        
     }
 }

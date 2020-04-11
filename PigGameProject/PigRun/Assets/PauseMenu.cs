@@ -38,9 +38,7 @@ public class PauseMenu : MonoBehaviour
         //Восстанавливаем исходный размер кнопки "выйти из игры"
         rectTransfrom = exit_button.GetComponent<RectTransform>();
         rectTransfrom.sizeDelta = new Vector2(388.76f, 72.87f); // задаем размер   new Vectro2 (width, height)
-
-
-
+        sharedvariables.StopFlip = false;
     }
 
     void Pause()
@@ -48,6 +46,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        sharedvariables.StopFlip = true;
     }
 
     public void QuitGame()

@@ -70,6 +70,7 @@
     <Compile Include="Assets\Pig\PigScripts\CharacterControllerScript.cs" />
     <Compile Include="Assets\Pig\PigScripts\PigDeath.cs" />
     <Compile Include="Assets\Pig\PigScripts\Player2DControl.cs" />
+    <Compile Include="Assets\SharedVariables.cs" />
     <Compile Include="Assets\Tree and Apple\Scripts\AppleDis.cs" />
     <Compile Include="Assets\Tree and Apple\Scripts\ApplePlayer.cs" />
     <Compile Include="Assets\Tree and Apple\Scripts\BigTreeAppleSpawner.cs" />
